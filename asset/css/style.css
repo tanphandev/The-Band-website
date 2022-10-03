@@ -147,7 +147,7 @@ html{
 #slider{
     margin-top: 46.492px;
     padding-top:50%;
-    background: url('/asset/img/band/map.jpg') top center / cover no-repeat;
+    background: url('../img/slider/picture1.jpg') top center / cover no-repeat;
     position:relative;
 }
 
