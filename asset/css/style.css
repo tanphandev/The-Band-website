@@ -61,9 +61,12 @@
 .mt-16{
     margin-top: 16px;
 }
+.mb-16{
+    margin-bottom: 16px;
+}
 /* Main */
 #main{
-
+    /* overflow: hidden; */
 }
 
 html{
@@ -76,7 +79,7 @@ html{
     background-color: #000;
     position: fixed;
     top: 0px;
-    right: 0px;
+    right: 0px; 
     left: 0px;
     z-index:1;
 }
@@ -86,10 +89,17 @@ html{
 #nav .nav-arrow-down{
     font-size:14px;
 }
+
+
 #nav > li{
     display:inline-block;
     position: relative;
 }
+
+#nav > li:first-child{
+    display: inline-block;
+}
+
 
 #nav .subnav >li:hover a, 
 #nav > li:hover > a{
@@ -129,7 +139,14 @@ html{
     padding:0 12px;
     line-height: 38px;
 }
-
+#header .bar-btn{
+    display: none;
+    float:right;
+    padding:0 23px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 #header .search-btn{
     float:right;
     padding:0 23px;
@@ -139,11 +156,23 @@ html{
     background-color: #f44336;
     cursor:pointer;
 }
-
+#header .bar-icon,
 #header .search-icon{
     color:#fff;
     line-height: 46.484px;
 }
+#header .bar-btn:hover i{
+    color:#000;
+}
+
+#header.open-bar{
+    height:auto;
+}
+
+#header .bar-btn:hover{
+    background-color: #ccc;
+}
+
 #slider{
     margin-top: 46.492px;
     padding-top:50%;
@@ -179,6 +208,7 @@ html{
     padding: 64px 16px 96px;
     margin-left:auto;
     margin-right:auto;
+    max-width:100%;
     width: 800px;
 }
 
@@ -205,7 +235,7 @@ html{
 }
 
 .members-list{
-    width:768px;
+    width:100%;
     padding-top:32px;
 }
 
@@ -298,6 +328,14 @@ book-ticket li:last-child{
 .contact-content{
     margin-top:48px;
 }
+.contact-content a{
+    color:#0000e4;
+    opacity:1;
+}
+.contact-content a:hover{
+    opacity:0.5;
+}
+
 .contact-info i[class*="ti-"]{
     width:25px;
     display: inline-block;
@@ -459,3 +497,5 @@ book-ticket li:last-child{
         opacity:1;
     }
 }
+/* responsive */
+/* PC */
