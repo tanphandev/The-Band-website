@@ -196,15 +196,6 @@ html{
     margin-bottom:25px;
 }
 
-#slider .text-description{
-
-}
-
-
-#content{
-
-}
-
 .content-section{
     padding: 64px 16px 96px;
     margin-left:auto;
@@ -268,7 +259,7 @@ html{
     color:#757575;
     border-bottom: 1px solid #ddd;
 }
-book-ticket li:last-child{
+.book-ticket li:last-child{
     border-bottom:none;
 }
 
@@ -325,12 +316,11 @@ book-ticket li:last-child{
     line-height: 1.4;
     margin-bottom: 15px;
 }
-
 .contact-content{
     margin-top:48px;
 }
 .contact-content a{
-    color:#0000e4;
+    color:#000;
     opacity:1;
 }
 .contact-content a:hover{
@@ -498,5 +488,3 @@ book-ticket li:last-child{
         opacity:1;
     }
 }
-/* responsive */
-/* PC */
